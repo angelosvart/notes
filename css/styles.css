@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-size: 18px;
+    background-color: #1F2833;
+    color: #C5C6C7;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    justify-content: center;
+    grid-row-gap: 3em;
+    align-content: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: calc(100vw - 20em);
+}
+
+.add {
+    margin-top: 6em;
+}
+
+.input-holder {
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+input {
+    background-color: #66fcf1;
+    border: 1px solid #45a29e;
+    padding: 0.5em;
+    font-size: 1em;
+    color: #0B0C10;
+    border-radius: 10px;
+    width: calc(70vw - 2em);
+    margin-right: 1em;
+}
+
+input:focus {
+    border-color: white;
+    outline: none;
+}
+
+.input-holder i {
+    align-self: center;
+    text-align: right;
+    float: right;
+    color: #66fcf1;
+}
+
+.input-holder i:hover {
+    color: #45a29e;
+    cursor: pointer;
+}
+
+.error {
+    position: absolute;
+    padding: 0.5em;
+    color: #ee4c7c;
+    font-size: 0.8em;
+
+}
+
+.note {
+    padding: 1.5em;
+    background-color: #141F2D;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: 95% 5%;
+    
+}
+
+.note:hover {
+    background-color: #2e363f;
+    box-shadow: 3px 3px #384452;
+}
+
+.note div {
+    overflow-x: hidden;
+}
+
+.delete {
+    align-self: center;
+    text-align: center;
+}
+
+.delete:hover {
+    color: #ee4c7c;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    .input-holder {
+        grid-template-columns: 95% 5%;
+    }
+    
+}
