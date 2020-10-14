@@ -1,1 +1,1 @@
-Excercise with a mockup of a Notes web application (no connection with backend)
+Excercise with a mockup of a Notes web application
